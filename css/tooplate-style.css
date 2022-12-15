@@ -376,6 +376,30 @@ strong {
   margin-left: 15px;
 }
 
+.skills ul{ 
+   display: grid;
+  grid-template-columns: repeat(4, 25%);
+  place-items: center;
+  margin-top: 30px;
+}
+.skills li{
+  width: 180px;
+  height: auto;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background: #474559;
+  color: #fff;
+}
+.skills li:hover{
+  background: #ffc200;
+  color: #fff;
+  width: 200px;
+}
 .owl-carousel .owl-nav span {
   display: none;
 }
@@ -470,8 +494,12 @@ strong {
 .contact-info a {
   color: #f7f3f3;
 }
-
-.social-links .uil {
+.social-links img{
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+}
+/* .social-links .uil {
   color: #f7f3f3;
   font-size: 20px;
   display: block;
@@ -479,7 +507,7 @@ strong {
 }
 .social-links .uil:hover {
   color: #ffc200;
-}
+} */
 
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
@@ -533,16 +561,16 @@ strong {
     padding: 3px 20px;
   }
 
-  .timeline-yr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65px;
-    height: 65px;
-  }
   .timeline-info {
     margin-left: 5em;
   }
+  .skills ul{ 
+    display: grid;
+   grid-template-columns: repeat(2, 50%);
+ }
+ .skills li{
+   width: 120px;
+ }
 }
 @media (max-width: 580px) {
   .animated-info {
